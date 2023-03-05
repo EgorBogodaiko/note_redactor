@@ -13,7 +13,7 @@ def start_bd_controler():
     while action != '6':
         action = ui.get_action()
         if action == '1':
-            show.show_all_bd(db_name)  # Готово, работает
+            show.show_all_bd(db_name)               # Готово, работает
         if action == '2':                           # Готово, работает
             f, v = ui.get_field_n_value()
             search.search(db_name, f, v, 1)
@@ -21,7 +21,8 @@ def start_bd_controler():
             f, v = ui.get_field_n_value()
             del_list = search.search(db_name, f, v, 2)
             decision = ui.ifempty_agree(del_list)
-            if decision == True: d.delete_row(db_name, del_list)
+            if decision == True:
+                d.delete_row(db_name, del_list)
         if action == '4':                           # Готово, работает
             add.add_row(db_name)
         if action == '5':                           # Готово, работает

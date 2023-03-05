@@ -5,6 +5,7 @@ from ui import *
 from checkers import *
 from datetime import time, date
 
+
 def add_row(bd):
     """Принимает имя файла
     Реализует добавление строки и заполнение её полей вводом значений через консоль позльзователем
